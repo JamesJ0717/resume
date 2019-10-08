@@ -1,0 +1,10 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+#header {
+    padding: 1rem;
+    background-color: #f0f1ff;
+}
+.resume {
+    margin-bottom: 1.5em;
+}
