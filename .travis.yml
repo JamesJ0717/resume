@@ -2,8 +2,10 @@ deploy:
   provider: s3
   access_key_id: $AWS_KEY
   secret_access_key: $AWS_SECRET_KEY
-  bucket: "jj-resume"
+  bucket: "jj-resume.pdf"
   skip_cleanup: true
   acl: public_read
   keep-history: true
   local-dir: .
+  on:
+    branch: master
