@@ -5,9 +5,9 @@ jobs:
     steps:
       - checkout
       - aws-s3/copy:
-          aws-access-key-id: AKIAVFAPNZ6QQ6NO5G4S
-          aws-region: us-east-1
-          aws-secret-access-key: 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
+          aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
+          aws-region: AWS_REGION_BLUE
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY_BLUE
           from: JJ_Resume.pdf
           to: "s3://jj-resume.pdf"
 orbs:
