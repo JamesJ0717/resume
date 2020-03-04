@@ -1,0 +1,12 @@
+jobs:
+  build:
+    docker:
+      - image: "cimg/python:3.6"
+    steps:
+      - checkout
+      - aws-s3/copy:
+          from: JJ_Resume.pdf
+          to: "s3://jj-resume.pdf"
+orbs:
+  aws-s3: circleci/aws-s3@1.0.15
+version: 2.1
