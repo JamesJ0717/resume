@@ -6,6 +6,6 @@ deploy:
   skip_cleanup: true
   acl: public_read
   keep-history: true
-  local-dir: .
+  upload-dir: .
   on:
     branch: master
