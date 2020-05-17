@@ -13,5 +13,5 @@ a {
   text-decoration: underline;
 }
 hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 0.1px solid rgba(0, 0, 0, 0.4);
 }
