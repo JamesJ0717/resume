@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    $for(author)$
+    <meta name="author" content="$author$" />
+    $endfor$
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JJ_Resume</title>
+  </head>
+  <body>
+    <div class="container">
+      $if(header)$
+      <div id="header">
+        <div class="row">
+          <div class="col-9">
+            <h1 class="display-5">$author$</h1>
+            <ul class="list-unstyled">
+              $for(header)$
+              <li>
+                <a href="$header.link$">$header.display$</a>
+                $if(header.link2)$ -
+                <a href="$header.link2$">$header.display2$</a>
+                $endif$
+              </li>
+              $endfor$
+            </ul>
+          </div>
+          <div class="col">
+            <img src="img/Resume_QR.svg" style="background-color: #b9b9b9;" alt="Resume_QR" />
+          </div>
+        </div>
+      </div>
+      $endif$
+      <p></p>
+      $body$
+      <p></p>
+      $if(skills)$
+      <div id="projects, tools, and leadership and volunteer" class="row">
+        <div class="col">
+          <h4>Skills</h4>
+          <hr />
+          <div class="row">
+            <div class="col">
+              <h5>Languages</h5>
+              <ol class="list-unstyled">
+                $skills.langs$
+              </ol>
+            </div>
+            <div class="col-6">
+              <h5>Tools and Frameworks</h5>
+              <ol class="list-unstyled">
+                $skills.tools$
+              </ol>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div>
+                $if(volunteer)$
+                <h4>Leadership and Volunteer</h4>
+                <hr />
+                $for(volunteer)$
+                <ul class="list-unstyled">
+                  <h5>$volunteer.name$</h5>
+                  <li>$volunteer.description$</li>
+                </ul>
+                $endfor$
+              </div>
+            </div>
+            $endif$
+          </div>
+          <h4></h4>
+        </div>
+        $endif$ $if(projects)$
+        <div class="col">
+          <h4>Projects</h4>
+          <hr />
+          <ul class="list-unstyled">
+            $for(projects)$
+            <h5>$projects.name$</h5>
+            <ol class="list-unstyled">
+              <li>
+                <a href="$projects.github$">$projects.github$</a>
+              </li>
+              <li>
+                <a href="$projects.site$">$projects.site$</a>
+              </li>
+            </ol>
+            <p></p>
+            $endfor$
+          </ul>
+        </div>
+        $endif$
+      </div>
+    </div>
+  </body>
+</html>
