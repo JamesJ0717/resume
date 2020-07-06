@@ -28,7 +28,7 @@ projects:
     site: www.jamesjohnson.io/portfolio/OPCS
   - Stockerino:
     name: Stockerino
-    github: www.github.com/JamesJ0717/Stockerino
+    github: www.github.com/JamesJ0717/CS490-Stockerino
     site: www.jamesjohnson.io/portfolio/Stockerino
   - GiftSnap:
     name: Gift Snap
