@@ -36,10 +36,45 @@
       </div>
       $endif$
       <p></p>
-      $body$
+      $if(about)$
+      <div id="about me">
+        <h4>About Me</h4>
+        $about$
+      </div>
+      $endif$
       <p></p>
-      $if(skills)$
+      $if(education)$
+      <div id="education">
+        <h4>Education</h4>
+        <hr />
+        $for(education)$
+        <h5><b>$education.school$</b> $education.time$</h5>
+        <ul class="list-unstyled">
+          $for(education.degrees)$
+          <li>$education.degrees$</li>
+          $endfor$
+        </ul>
+        $endfor$
+      </div>
+      $endif$
+      <p></p>
+      $if(work)$
+      <div id="previous experience">
+        <h4>Previous Experience</h4>
+        <hr />
+        <div class="experience">
+          $for(work)$
+          <h5><b>$work.company$</b> $work.time$</h5>
+          <h6>$work.title$</h6>
+          $work.body$
+          <p></p>
+          $endfor$
+        </div>
+      </div>
+      $endif$
+      <p></p>
       <div id="projects, tools, and leadership and volunteer" class="row">
+        $if(skills)$
         <div class="col">
           <h4>Skills</h4>
           <hr />
@@ -47,20 +82,20 @@
             <div class="col">
               <h5>Languages</h5>
               <ol class="list-unstyled">
-                $skills.langs$
+                $skills.langs[, ]$
               </ol>
             </div>
             <div class="col-6">
               <h5>Tools and Frameworks</h5>
               <ol class="list-unstyled">
-                $skills.tools$
+                $skills.tools[, ]$
               </ol>
             </div>
           </div>
+          $if(volunteer)$
           <div class="row">
             <div class="col">
               <div>
-                $if(volunteer)$
                 <h4>Leadership and Volunteer</h4>
                 <hr />
                 $for(volunteer)$
@@ -71,8 +106,8 @@
                 $endfor$
               </div>
             </div>
-            $endif$
           </div>
+          $endif$
           <h4></h4>
         </div>
         $endif$ $if(projects)$
