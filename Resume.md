@@ -72,9 +72,14 @@ volunteer:
 work:
   - 1:
     company: BAE Systems
-    time: June 2019 - Present
-    title: Software Engineer I
+    time: June 2019 - May 2020
+    title: Software Engineer Intern
     body: I am apart of a team of 14 engineers fixing bugs and implementing new features for upcoming releases. Worked mostly in Java and JavaScript, as well as Yui and React.js. Focused on Services and Service Infrastructure with some overlap into the Web side of things.
+  - 2:
+    company: BAE Systems
+    title: Software Engineer I
+    time: May 2020 - Present
+    body: On a team of engineers focusing on containerizing our platform. Also handling creating new API endpoints and adding functionality to existing ones.
 education:
   - 1:
     school: SUNY Polytechnic Institute
