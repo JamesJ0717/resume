@@ -59,27 +59,27 @@ projects:
     name: Gift Snap
     github: www.github.com/JamesJ0717/CS498-Capstone-GiftSnap
     site: www.jamesjohnson.io/portfolio/GiftSnap
-volunteer:
-  - 1:
-    name: SUNY Poly Makers Club Treasurer
-    description: Kept track of club funding and filled out purchase vouchers for goods.
-  - 2:
-    name: SUNY Poly NCS Club CTF Coordinator
-    description: Handled registering the club for various CTF events throughout the semester.
-  - 3:
-    name: SUNY Poly Tutor
-    description: Helping students get a better understanding of topics in Computer Science, Networking and Computer Security, and Physics.
+  # volunteer:
+  # - 1:
+  #   name: SUNY Poly Makers Club Treasurer
+  #   description: Kept track of club funding and filled out purchase vouchers for goods.
+  # - 2:
+  #   name: SUNY Poly NCS Club CTF Coordinator
+  #   description: Handled registering the club for various CTF events throughout the semester.
+  # - 3:
+  #   name: SUNY Poly Tutor
+  #   description: Helping students get a better understanding of topics in Computer Science, Networking and Computer Security, and Physics.
 work:
   - 1:
-    company: BAE Systems
+    company: BAE Systems Inc.
+    time: May 2020 - Present
+    title: Software Engineer I
+    body: On a team of engineers focusing on containerizing our platform. Also handling creating new API endpoints and adding functionality to existing ones.
+  - 2:
+    company: BAE Systems Inc.
     time: June 2019 - May 2020
     title: Software Engineer Intern
     body: I am apart of a team of 14 engineers fixing bugs and implementing new features for upcoming releases. Worked mostly in Java and JavaScript, as well as Yui and React.js. Focused on Services and Service Infrastructure with some overlap into the Web side of things.
-  - 2:
-    company: BAE Systems
-    title: Software Engineer I
-    time: May 2020 - Present
-    body: On a team of engineers focusing on containerizing our platform. Also handling creating new API endpoints and adding functionality to existing ones.
 education:
   - 1:
     school: SUNY Polytechnic Institute
