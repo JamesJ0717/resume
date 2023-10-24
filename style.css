@@ -1,0 +1,16 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+#header {
+  padding: 1rem;
+}
+a {
+  /* color: #000000; */
+  text-decoration: underline;
+}
+hr {
+  border-top: 0.1px solid rgba(0, 0, 0, 0.4);
+}
+.hidden {
+  display: none;
+}
